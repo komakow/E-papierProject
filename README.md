@@ -1,5 +1,5 @@
 # E-papierProject
-Project based at e-link waweshare 2.9" module and Raspberry Pi 3A+.
+Project based at e-link waweshare 2.9" module, Raspberry Pi 3A+ and STM32_F407VG.
 
 Links:
 
