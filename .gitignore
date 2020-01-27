@@ -3,5 +3,4 @@ E-Ink_STM32/.project
 *.prefs
 *.xml
 
-E-papierProject\E-Ink_STM32\Debug\
-*.o
+E-Ink_STM32/Debug/
