@@ -35,6 +35,21 @@ GPIOcfgType clk;
 #define Nss_pin    PIN4
 GPIOcfgType nss;
 
+//DC pin
+#define DC_port   PORTE
+#define DC_pin    PIN11
+GPIOcfgType dc;
+
+//RST pin
+#define RST_port   PORTE
+#define RST_pin    PIN12
+GPIOcfgType RST;
+
+//BUSY pin
+#define BUSY_port   PORTE
+#define BUSY_pin    PIN13
+GPIOcfgType BUSY;
+
 //Red diode
 #define DiodeRed_port       PORTD
 #define DiodeRed_pin        PIN14

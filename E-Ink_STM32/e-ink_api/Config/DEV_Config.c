@@ -30,12 +30,12 @@
 #
 ******************************************************************************/
 #include "DEV_Config.h"
-#include "stm32f1xx_hal_spi.h"
+#include "spiDriver.h"
 
-extern SPI_HandleTypeDef hspi1;
+extern SPIcfg spi;
 void DEV_SPI_WriteByte(UBYTE value)
 {
-    HAL_SPI_Transmit(&hspi1, &value, 1, 1000);
+  SPI_RW(&spi, value);
 }
 
 int DEV_Module_Init(void)
@@ -53,5 +53,16 @@ void DEV_Module_Exit(void)
 
     //close 5V
     DEV_Digital_Write(EPD_RST_PIN, 0);
+}
+
+void Wait_km_ms(uint16_t timeMS)
+{
+  for(uint16_t a=0;a<timeMS;a++)
+  {
+    for(uint16_t b=0;b<1000;b++)
+    {
+      __asm__(" NOP");
+    }
+  }
 }
 

@@ -52,6 +52,10 @@
 									<listOptionValue builtIn="false" value="../Libraries/STM32F4xx_StdPeriph_Driver/inc"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/E-Ink_STM32/userDrivers}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/E-Ink_STM32/userDrivers/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/E-Ink_STM32/e-ink_api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/E-Ink_STM32/e-ink_api/Config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/E-Ink_STM32/e-ink_api/Fonts}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/E-Ink_STM32/e-ink_api/GUI}&quot;"/>
 								</option>
 								<option id="com.atollic.truestudio.common_options.target.endianess.363990131" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
 								<option id="com.atollic.truestudio.common_options.target.mcpu.294521040" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F407VG" valueType="enumerated"/>
@@ -110,8 +114,27 @@
 							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.789224315" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput"/>
 						</toolChain>
 					</folderInfo>
+					<folderInfo id="com.atollic.truestudio.exe.debug.1006264696.699586782" name="/" resourcePath="e-ink_api/Config">
+						<toolChain id="com.atollic.truestudio.exe.debug.toolchain.345866519" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.debug.toolchain" unusedChildren="">
+							<option id="com.atollic.truestudio.general.runtimelib.1667194068.1575087370" name="Runtime Library" superClass="com.atollic.truestudio.general.runtimelib.1667194068"/>
+							<option id="com.atollic.truestudio.toolchain_options.mcu.1239251263.2087569014" name="Microcontroller" superClass="com.atollic.truestudio.toolchain_options.mcu.1239251263"/>
+							<option id="com.atollic.truestudio.toolchain_options.vendor.238521743.1663818004" name="Vendor name" superClass="com.atollic.truestudio.toolchain_options.vendor.238521743"/>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.as.1832286789" name="Assembler" superClass="com.atollic.truestudio.exe.debug.toolchain.as.1511239740">
+								<inputType id="com.atollic.truestudio.as.input.1918814815" name="Input" superClass="com.atollic.truestudio.as.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.735323936" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.708349958">
+								<inputType id="com.atollic.truestudio.gcc.input.2109995086" superClass="com.atollic.truestudio.gcc.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.177869034" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld.1793919057"/>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gpp.1906565311" name="C++ Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gpp.2063792257"/>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ldcc.221417906" name="C++ Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ldcc.448428575"/>
+							<tool id="com.atollic.truestudio.ar.base.460843846" name="Archiver" superClass="com.atollic.truestudio.ar.base.510900355"/>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.265686941" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput.789224315"/>
+						</toolChain>
+					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Libraries"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="e-ink_api"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="userDrivers"/>
 					</sourceEntries>

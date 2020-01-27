@@ -52,17 +52,49 @@ int GPIO_InitializeAll()
 		ret = -3;
 	}
 
-	nss.mode = alternate;
+	nss.mode = output;
 	nss.pin = Nss_pin;
 	nss.port = Nss_port;
 	nss.pull = pullUp;
 	nss.typ = pushPull;
 	nss.speed = high;
-	nss.alter = AF5;
 	if (gpioCfg(&nss) != 0) 			//if status of init GPIO is 'error'
 	{
 		ret = -4;
 	}
+
+	dc.mode = output;
+  dc.pin = DC_pin;
+  dc.port = DC_port;
+  dc.pull = pullUp;
+  dc.typ = pushPull;
+  dc.speed = high;
+  if (gpioCfg(&dc) != 0)       //if status of init GPIO is 'error'
+  {
+    ret = -5;
+  }
+
+  RST.mode = output;
+  RST.pin = RST_pin;
+  RST.port = RST_port;
+  RST.pull = pullUp;
+  RST.typ = pushPull;
+  RST.speed = high;
+  if (gpioCfg(&RST) != 0)       //if status of init GPIO is 'error'
+  {
+    ret = -6;
+  }
+
+  BUSY.mode = input;
+  BUSY.pin = BUSY_pin;
+  BUSY.port = BUSY_port;
+  BUSY.pull = pullUp;
+  BUSY.typ = pushPull;
+  RST.speed = high;
+  if (gpioCfg(&BUSY) != 0)       //if status of init GPIO is 'error'
+  {
+    ret = -6;
+  }
 
 	DiodeRed.mode     = output;
 	DiodeRed.pin      = DiodeRed_pin;
