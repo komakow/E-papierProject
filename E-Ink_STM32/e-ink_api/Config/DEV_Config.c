@@ -59,7 +59,7 @@ void Wait_km_ms(uint16_t timeMS)
 {
   for(uint16_t a=0;a<timeMS;a++)
   {
-    for(uint16_t b=0;b<1000;b++)
+    for(uint16_t b=0;b<3000;b++)
     {
       __asm__(" NOP");
     }
